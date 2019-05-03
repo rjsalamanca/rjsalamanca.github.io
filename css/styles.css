@@ -1,0 +1,52 @@
+.main-nav{
+    width:50%;
+    margin:0 auto;
+}
+
+.main--nav-bg-margin-padding{
+    padding:10px 10px;
+    border-radius:0 0 10px 10px;
+    background-color: #3776DE;
+}
+
+.nav--list-flex{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:none;
+    justify-content:space-around;
+}
+
+.nav__list li{
+    list-style-type:none;
+    display:inline-block; 
+}
+
+.nav--item-margin{
+    display:none;
+}
+
+.hobbies{
+    border:1px solid red;
+}
+
+.hobbies__list{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    list-style-type:none;
+    justify-content:space-around;
+    align-items: center;
+    width:100%;
+}
+
+.hobbies__list-item{
+    border:1px solid red;
+    flex-basis:320px;
+    flex-grow:1;
+    height:250px;
+}
+
+.gaming--mod{
+    /* background: url(../images//overwatch_bg.jpeg); */
+    background-size: cover;
+}
