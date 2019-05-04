@@ -1,12 +1,42 @@
+html{
+    font-size:16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/background.png);
+    background-size:100% 8%;
+    background-repeat: no-repeat;
+}
+
+main{
+    padding: 20px 0px 48px 0px;
+    /* padding-bottom: 48px; */
+}
+
+.logo{
+    text-align:center;
+}
+
+.logo--size{
+    margin-top:10px;
+    height:50px;
+    border:2px solid white;
+    padding:5px
+}
+
 .main-nav{
-    width:50%;
+    position: fixed;
+    bottom:0;
+    width:100%;
     margin:0 auto;
+    
 }
 
 .main--nav-bg-margin-padding{
-    padding:10px 10px;
-    border-radius:0 0 10px 10px;
+    margin-top:10px;
     background-color: #3776DE;
+    overflow: auto;
 }
 
 .nav--list-flex{
@@ -17,12 +47,83 @@
 }
 
 .nav__list li{
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    padding:15px 0px;
     list-style-type:none;
     display:inline-block; 
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+.nav__list li:hover{
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    box-shadow: inset 0 0 10px #000000;
+    background-color:#0637AF;
+}
+
+.nav__list .nav__current{
+    background-color:#0637AF;
 }
 
 .nav--item-margin{
     display:none;
+}
+
+.about-me{
+    padding:0 20px;
+}
+
+.about-header{
+    text-align:center;
+    font-size: 1.8em;
+    font-family: 'Catamaran', sans-serif;
+    padding-bottom:15px;
+}
+
+.about__p{
+    margin:20px 0
+}
+
+.image--polaroid-style{
+    padding:20px;
+    box-shadow: 0px 0px 10px #888888;
+    border-radius:4px;
+    text-align:center;
+    background: #ffffff
+}
+
+.image--item-size{
+    width:100%
+}
+
+.image--caption-margin{
+    padding-top:20px;
+}
+
+.skills{
+    background:url(../images/skills-divider-white.png);
+    background-size:100% 30px;
+    background-repeat: no-repeat;
+    background-color:#1279CA;
+    background-position: top;
+    padding:30px 20px;
+    color: #ffffff
+}
+
+.skills__header{
+    text-align:center;
+}
+
+.skills--header-main-title-size{
+    font-size:1.3em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.skills--header-sub-titles-size-color{
+    color:rgb(0, 79, 163);
+    font-family: 'Catamaran', sans-serif;
+    font-size:0.8em;
 }
 
 .hobbies{
