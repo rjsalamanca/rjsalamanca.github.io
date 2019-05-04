@@ -7,13 +7,19 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet Link -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:900" rel="stylesheet">
     <link rel="Stylesheet" href="css/reset.css">
     <link rel="Stylesheet" href="css/styles.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
+    <div class='logo'>
+        <img class='logo__image logo--size' src="images/logo_small.png" />
+    </div>
     <nav class='main-nav main--nav-bg-margin-padding'>
         <ul class='nav__list nav--list-flex'>
             <li>
@@ -35,16 +41,20 @@
         </ul>
     </nav>
     <main>
-        <div>
-            <figure>
-                <img src="" />
+        <div class='about-me'>
+            <header class='about-header'>
+                <h1 class='about--header-size'>about</h1>
+            </header>
+            <figure class='image-container image--polaroid-style'>
+                <img class='image__item image--item-size' src="./images/me.jpg" />
+                <figcaption class='image__caption image--caption-margin'>RJ Salamanca - 2017</figcaption>
             </figure>
-            <p>
+            <p class='about__p'>
                 Hello, my name is Ronito Jr Salamanca, but you can call me RJ for short.
                 I was born in Manila, lived in Toronto for 25 years, and currently residing in the suburbs
                 of Atlanta. I'm currently a bootcamp student at DigitalCrafts, based in Atlanta.
             </p>
-            <p>
+            <p class='about__p'>
                 In my spare time I like to play video games (mostly fps), hike with my dogs, exercise,
                 and
                 I have two wonderful little dogs named Nala and Milo. Nala is a
@@ -53,18 +63,19 @@
             </p>
         </div>
         <div class='skills'>
-            <h2>Skill Set:</h2>
+            <header class='skills__header'>
+                <h2 class='skills__header-main-title skills--header-main-title-size'>skill set</h2>
+                <h3 class='skills__header-sub-title skills--header-sub-titles-size-color'>Programming languages, markups, and styling</h3>
+            </header>
             <ul class='hobbies__list'>
-                <li class='hobbies__list-item gaming--mod'>
-                    Gaming
-                </li>
+                <li class='hobbies__list-item gaming--mod'></li>
                 <li class='hobbies__list-item'>HTML</li>
                 <li class='hobbies__list-item'>CSS</li>
                 <li class='hobbies__list-item'>Javascript</li>
-                <li class='hobbies__list-item'></li>
+                <li class='hobbies__list-item'>REACT</li>
             </ul>
         </div>
-        <div class='hobbies'>
+        <!-- <div class='hobbies'>
             <h2>Interests & Hobbies:</h2>
             <ul class='hobbies__list'>
                 <li class='hobbies__list-item gaming--mod'>
@@ -76,6 +87,14 @@
                 <li class='hobbies__list-item'>Food Festivals</li>
             </ul>
         </div>
+        <footer>
+            <ul>
+                <li>Twitter</li>
+                <li>Facebook</li>
+                <li>Github</li>
+                <li>Medium</li>
+            </ul>
+        </footer> -->
     </main>
 </body>
 
