@@ -7,94 +7,125 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Stylesheet Link -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
     <link rel="Stylesheet" href="css/reset.css">
     <link rel="Stylesheet" href="css/styles.css">
-
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class='logo'>
-        <img class='logo__image logo--size' src="images/logo_small.png" />
+    <div class='large'>
+        <div class='logo'>
+            <img class='logo__image logo--size' src="images/logo_small.png" />
+        </div>
+        <nav class='main-nav main--nav-bg-margin-padding'>
+            <ul class='nav__list nav--list-flex'>
+                <li>
+                    <i class="fas fa-house-damage"></i>
+                    <span class='nav__item nav--item-margin'>Home</span>
+                </li>
+                <li class='nav__current'>
+                    <i class="fas fa-address-card"></i>
+                    <span class='nav__item nav--item-margin'>About</span>
+                </li>
+                <li>
+                    <i class="fas fa-briefcase"></i>
+                    <span class='nav__item nav--item-margin'>Portfolio</span>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <span class='nav__item nav--item-margin'>Contact</span>
+                </li>
+            </ul>
+        </nav>
     </div>
-    <nav class='main-nav main--nav-bg-margin-padding'>
-        <ul class='nav__list nav--list-flex'>
-            <li>
-                <i class="fas fa-house-damage"></i>
-                <span class='nav__item nav--item-margin'>Home</span>
-            </li>
-            <li class='nav__current'>
-                <i class="fas fa-address-card"></i>
-                <span class='nav__item nav--item-margin'>About</span>
-            </li>
-            <li>
-                <i class="fas fa-briefcase"></i>
-                <span class='nav__item nav--item-margin'>Portfolio</span>
-            </li>
-            <li>
-                <i class="fas fa-envelope"></i>
-                <span class='nav__item nav--item-margin'>Contact</span>
-            </li>
-        </ul>
-    </nav>
     <main>
         <div class='about-me'>
-            <header class='about-header'>
-                <h1 class='about--header-size'>about</h1>
-            </header>
-            <figure class='image-container image--polaroid-style'>
+            <figure class='image-container image--padding'>
                 <img class='image__item image--item-size' src="./images/me.jpg" />
-                <figcaption class='image__caption image--caption-margin'>RJ Salamanca - 2017</figcaption>
             </figure>
-            <p class='about__p'>
-                Hello, my name is Ronito Jr Salamanca, but you can call me RJ for short.
-                I was born in Manila, lived in Toronto for 25 years, and currently residing in the suburbs
-                of Atlanta. I'm currently a bootcamp student at DigitalCrafts, based in Atlanta.
-            </p>
-            <p class='about__p'>
-                In my spare time I like to play video games (mostly fps), hike with my dogs, exercise,
-                and
-                I have two wonderful little dogs named Nala and Milo. Nala is a
-                German Pinscher and her name was taken from Lion King. Milo is a
-                dachshund-minpin mix (or so we think).
-            </p>
-        </div>
-        <div class='skills'>
-            <header class='skills__header'>
-                <h2 class='skills__header-main-title skills--header-main-title-size'>skill set</h2>
-                <h3 class='skills__header-sub-title skills--header-sub-titles-size-color'>Programming languages, markups, and styling</h3>
+            <header class='about-header'>
+                <h1 class='about--header-size'>RJ Salamanca</h1>
             </header>
-            <ul class='hobbies__list'>
-                <li class='hobbies__list-item gaming--mod'></li>
-                <li class='hobbies__list-item'>HTML</li>
-                <li class='hobbies__list-item'>CSS</li>
-                <li class='hobbies__list-item'>Javascript</li>
-                <li class='hobbies__list-item'>REACT</li>
-            </ul>
+            <p class='about__p'>
+                Hello, my name is RJ Salamanca,I'm a <span class='about--enhance'>full stack developer.</span>
+                I was born in Manila, lived in Toronto for 25 years, and currently residing in the suburbs
+                of <span class='about--enhance'>Atlanta</span>.
+            </p>
+            <p class='about__p'>
+                In my spare time I like to play video games, hike with my dogs, and exercise.
+            </p>
         </div>
-        <!-- <div class='hobbies'>
-            <h2>Interests & Hobbies:</h2>
-            <ul class='hobbies__list'>
-                <li class='hobbies__list-item gaming--mod'>
-                    Gaming
-                </li>
-                <li class='hobbies__list-item'>Dogs</li>
-                <li class='hobbies__list-item'>Working Out</li>
-                <li class='hobbies__list-item'>Movies</li>
-                <li class='hobbies__list-item'>Food Festivals</li>
-            </ul>
+        <div class='card-container'>
+            <div class='skills'>
+                <header class='section__header'>
+                    <h2 class='section__header-main-title section--header-main-title-size'>Skill Set</h2>
+                    <h3 class='section__header-sub-title section--header-sub-titles-size-color'>LANGUAGES,MARKUP, &
+                        STYLING</h3>
+                </header>
+                <ul class='skills__list'>
+                    <li><span class='bar--html'>HTML</span>90%</li>
+                    <li><span class='bar--css'>CSS</span>80%</li>
+                    <li><span class='bar--js'>Javascript</span>70%</li>
+                    <li><span class='bar--react'>REACT</span>75%</li>
+                    <li><span class='bar--python'>PYTHON</span>85%</li>
+                </ul>
+                <p class='skills__caption skills--captions-size-color'>LEVEL OF SKILL (BOUND TO INCREASE)</p>
+            </div>
+            <div class='skills-divider'></div>
+            <div class='work'>
+                <header class='section__header'>
+                    <h2 class='section__header-main-title section--header-main-title-size'>Projects</h2>
+                    <h3 class='section__header-sub-title section--header-sub-titles-size-color'>CHECK OUT SOME OF MY WORK
+                    </h3>
+                </header>
+                <ul class='work__list'>
+                    <li class='work__item'>
+                        <figure class='work__item-img-container'>
+                            <img src='images/dangerous_diving.png' />
+                            <figcaption class='work__item-caption'>
+                                <i class='fab fa-python item__sub1'></i>
+                                <div class='item__sub2'>Dangerous Diving</div>
+                                <div class='item__sub3'>Created with pygame</div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class='work__item'>
+                        <figure class='work__item-img-container'>
+                            <img src='images/css_html_v2.png' />
+                            <figcaption class='work__item-caption'>
+                                <i class='fab fa-html5 item__sub1'></i>
+                                <div class='item__sub2'>Dribble Recreation</div>
+                                <div class='item__sub3'>An HTML and CSS Exercise</div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class='work__item'>
+                        <figure class='work__item-img-container'>
+                            <img src='images/css_html_v1.png' />
+                            <figcaption class='work__item-caption'>
+                                <i class="fab fa-css3-alt item__sub1"></i>
+                                <div class='item__sub2'>CSS and HTML</div>
+                                <div class='item__sub3'>2014 CSS and HTML Exercise</div>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <div class='social'>
+                <header class='section__header'>
+                    <h2 class='section__header-main-title section--header-main-title-size'>Find me online</h2>
+                    <h3 class='section__header-sub-title section--header-sub-titles-size-color'>ONLINE PRESENCE</h3>
+                </header>
+                <ul class='social__list'>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-github"></i></li>
+                    <li><i class="fab fa-medium"></i></li>
+                    <li><i class="fab fa-linkedin"></i></li>
+                </ul>
+            </div>
         </div>
-        <footer>
-            <ul>
-                <li>Twitter</li>
-                <li>Facebook</li>
-                <li>Github</li>
-                <li>Medium</li>
-            </ul>
-        </footer> -->
     </main>
 </body>
 
