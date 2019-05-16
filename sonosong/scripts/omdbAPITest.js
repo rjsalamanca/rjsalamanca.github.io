@@ -15,7 +15,7 @@ function getMovies(omdbMovie) {
 
             omdbMovie.Search.forEach(function(movie,index) {
                 // SEARCH INDIVIDUAL FULL
-                let individualMovie = `http://www.omdbapi.com/?i=${movie.imdbID}&plot=full&apikey=${omdb_api_key}`;
+                let individualMovie = `https://www.omdbapi.com/?i=${movie.imdbID}&plot=full&apikey=${omdb_api_key}`;
                 get(individualMovie)
                     .then((response)=>{
                         const load = document.getElementById('loadingIcon');
@@ -100,7 +100,7 @@ searchInput.addEventListener('keypress', function(e) {
     let key = e.which || e.keyCode;
     if (key === 13) {
         let search = this.value;
-        URL = `http://www.omdbapi.com/?s=${search}&plot=full&apikey=${omdb_api_key}`;
+        URL = `https://www.omdbapi.com/?s=${search}&plot=full&apikey=${omdb_api_key}`;
         get(URL)
         .then((response) =>  {
             getMovies(response);
