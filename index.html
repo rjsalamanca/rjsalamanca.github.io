@@ -12,7 +12,6 @@
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="common-css/fluidbox.min.css" rel="stylesheet">
   <link href="01-cv-portfolio/css/styles.css" rel="stylesheet">
   <link href="01-cv-portfolio/css/responsive.css" rel="stylesheet">
   <link href="/css/pgFont.css" rel="stylesheet" >
@@ -315,8 +314,8 @@
   </section>
   <section class="counter-section" id="counter">
     <div class="container">
-      <h2 class='text-center'><b>SKILLS:</b></h2>
-      <ul class='d-flex justify-content-center text-center'>
+      <h2 class='text-center counter-shadow'><b>SKILLS:</b></h2>
+      <ul class='d-flex justify-content-center text-center flex-wrap mb-4 counter-shadow'>
         <li class='h1 align-self-center'><i class="icon fab icon-pg-logo text-white mt-3" style="font-size:1.4em; font-weight:800;"></i></li>
         <li class='display-4 m-2'><i class="icon fab fa-python"></i></li>
         <li class='display-4 m-2'><i class="icon fab fa-js-square"></i></li>
@@ -339,26 +338,26 @@
       <div class="row">
         <div class="col-sm-6 col-md-6 col-lg-3">
           <div class="counter margin-b-30">
-            <h1 class="title"><b><span class="counter-value" data-duration="1000" data-count="573">0</span></b></h1>
-            <h5 class="desc"><b>Git Contributions</b></h5>
+            <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="1000" data-count="573">0</span></b></h1>
+            <h5 class="desc desc-shadow"><b>Git Contributions</b></h5>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-3">
           <div class="counter margin-b-30">
-            <h1 class="title"><b><span class="counter-value" data-duration="300" data-count="3">0</span></b></h1>
-            <h5 class="desc"><b>Certificates</b></h5>
+            <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="300" data-count="3">0</span></b></h1>
+            <h5 class="desc desc-shadow"><b>Certificates</b></h5>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-3">
           <div class="counter margin-b-30">
-            <h1 class="title"><b><span class="counter-value" data-duration="300" data-count="3">0</span></b></h1>
-            <h5 class="desc"><b>Projects</b></h5>
+            <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="300" data-count="3">0</span></b></h1>
+            <h5 class="desc desc-shadow"><b>Projects</b></h5>
           </div>
         </div>
         <div class="col-sm-6 col-md-6 col-lg-3">
           <div class="counter margin-b-30">
-            <h1 class="title"><b><span class="counter-value" data-duration="1500" data-count="1211">0</span></b></h1>
-            <h5 class="desc"><b>Codewars Points</b></h5>
+            <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="1500" data-count="1211">0</span></b></h1>
+            <h5 class="desc desc-shadow"><b>Codewars Points</b></h5>
           </div>
         </div>
       </div>
@@ -375,20 +374,11 @@
 
   <script src="common-js/jquery-3.2.1.min.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
   <script src="common-js/tether.min.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
+  <script src="common-js/bootstrap.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
   <script src="common-js/isotope.pkgd.min.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
   <script src="common-js/jquery.waypoints.min.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
   <script src="common-js/progressbar.min.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
   <script src="common-js/scripts.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
-  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="68a1658774019bd5bb69f142-|49" defer=""></script></body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
   <script>
   window.onload = async function() { //executes code after DOM loads
     //--- select all <video> on the page
@@ -412,8 +402,9 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-23581568-13');
-  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js"
-    data-cf-settings="68a1658774019bd5bb69f142-|49" defer=""></script>
+  </script>
+
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="68a1658774019bd5bb69f142-|49" defer=""></script>
 </body>
 
 </html>

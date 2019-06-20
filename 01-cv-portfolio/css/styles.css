@@ -558,3 +558,11 @@ video{
     width:100%;
     background-size:cover;
 }
+
+.counter-shadow{
+    text-shadow:0 4px 0 rgba(100,100,100,1), 0 8px 3px #000;
+}
+.desc-shadow{
+    color:#ffab00;
+    text-shadow:0 2px 0 rgba(100,100,100,1), 0 4px 3px #000;
+}
