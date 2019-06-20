@@ -543,12 +543,18 @@ video{
 
 .video1 {
     background-image: url('/images/dd.png');
+    width:100%;
+    background-size:cover;
 }
 
 .video2{
     background-image: url('/images/ss.png');
+    width:100%;
+    background-size:cover;
 }
 
 .video3{
     background-image: url('/images/brainz.png');
+    width:100%;
+    background-size:cover;
 }
