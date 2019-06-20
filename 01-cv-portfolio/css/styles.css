@@ -17,7 +17,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;
-    color: #333
+    color: #333;
+    min-width: 320px;
 }
 
 h1,
@@ -44,6 +45,7 @@ h3,
 h4,
 h5,
 h6 {
+    overflow-wrap: initial;
     line-height: 1.5;
     font-weight: inherit
 }
@@ -133,6 +135,12 @@ button {
     cursor: pointer
 }
 
+.btn-outline-secondary:hover{
+    background: transparent;
+    border-color: #ffa804;
+    color: #777;
+}
+
 .icon {
     font-size: 1.1em;
     display: inline-block;
@@ -163,7 +171,7 @@ b.max-bold {
     border-radius: 5px;
     margin-bottom: 20px;
     display: block;
-    background: #ffa804
+    background: #ffa804;
 }
 
 .margin-t-10 {
@@ -228,7 +236,6 @@ header .downlad-btn {
     border-radius: 4px;
     float: right;
     margin-top: 30px;
-    box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
     background: #ffad01;
     color: #fff;
     -webkit-transition: all .2s ease;
@@ -327,8 +334,12 @@ header .downlad-btn:hover {
     transform: scale(1)
 }
 
+.about-section.section{
+    padding-bottom:0;
+}
+
 .portfolio-section {
-    padding-bottom: 0
+    padding-bottom: 50px;
 }
 
 .portfolio-section .portfolioFilter {
@@ -523,4 +534,22 @@ header .downlad-btn:hover {
     text-align: center;
     padding: 30px 0;
     background: #28023d
+}
+
+video{
+    width:100%;
+    background-size:cover;
+
+}
+
+.video1 {
+    background-image: url('/images/dd.png');
+}
+
+.video2{
+    background-image: url('/images/ss.png');
+}
+
+.video3{
+    background-image: url('/images/brainz.png');
 }
