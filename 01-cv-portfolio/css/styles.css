@@ -294,6 +294,13 @@ header .downlad-btn:hover {
   position: relative;
   top: -100px;
   margin-bottom: -70px;
+  background: url(/images/headshot1.jpg);
+  background-size: cover;
+}
+
+.intro .profile-img:hover {
+  background: url(/images/headshot2.jpg);
+  background-size: cover;
 }
 
 .intro .information > li {
