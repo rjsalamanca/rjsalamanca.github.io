@@ -155,7 +155,7 @@
             </div>
             <div class="container">
                <div class="row card-group">
-                  <div class="d-flex col-md-4">
+                  <div class="project d-flex col-md-4">
                      <div class="card mb-4 shadow-sm">
                         <div class="card-img-top">
                            <video class="video1">
@@ -180,7 +180,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex col-md-4">
+                  <div class="project d-flex col-md-4">
                      <div class="card mb-4 shadow-sm">
                         <div class="card-img-top">
                            <video class="video2">
@@ -207,7 +207,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex col-md-4">
+                  <div class="project d-flex col-md-4">
                      <div class="card mb-4 shadow-sm">
                         <div class="card-img-top">
                            <video class="video3">
@@ -237,11 +237,11 @@
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex col-md-4">
+                  <div class="project d-flex col-md-4">
                      <div class="card mb-4 shadow-sm">
                         <div class="card-img-top">
                            <video class="video3">
-                              <source src="/videos/brainsv2.mp4" type="video/mp4">
+                              <source src="/videos/brainzv2.mp4" type="video/mp4">
                               Your browser does not support the video tag.
                            </video>
                         </div>
@@ -266,7 +266,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="d-flex col-md-4">
+                  <div class="project d-flex col-md-4">
                      <div class="card mb-4 shadow-sm">
                         <div class="card-img-top">
                            <video class="video3">
@@ -505,16 +505,16 @@
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="counter margin-b-30">
-                  <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="300"
-                           data-count="5">0</span></b></h1>
+                  <h1 class="title"><b><span id="project-counter" class="counter-value counter-shadow" data-duration="300"
+                           data-count="0">0</span></b></h1>
                   <h5 class="desc desc-shadow"><b>Projects</b></h5>
                </div>
             </div>
             <div class="col-sm-6 col-md-6 col-lg-3">
                <div class="counter margin-b-30">
-                  <h1 class="title"><b><span class="counter-value counter-shadow" data-duration="1500"
-                           data-count="1211">0</span></b></h1>
-                  <h5 class="desc desc-shadow"><b>Codewars Points</b></h5>
+                  <h1 class="title"><b><span id="code-wars-honor" class="counter-value counter-shadow" data-duration="1500"
+                           data-count="0">0</span></b></h1>
+                  <h5 class="desc desc-shadow"><b>Codewars Honor</b></h5>
                </div>
             </div>
          </div>
@@ -530,7 +530,7 @@
       <p class="copyright">
          Ronito Salamanca &copy;
          <script type="68a1658774019bd5bb69f142-text/javascript">
-        document.write(new Date().getFullYear());
+         document.write(new Date().getFullYear());
       </script> | Design by: <a href="https://colorlib.com" target="_blank">Colorlib</a>
       </p>
    </footer>
@@ -544,8 +544,16 @@
    <script src="common-js/scripts.js" type="68a1658774019bd5bb69f142-text/javascript"></script>
    <script>
       window.onload = async function () { //executes code after DOM loads
+
+         const codeWarsAPI = 'https://www.codewars.com/api/v1/users/rsalamanca';
+         const cwhonor = document.getElementById("code-wars-honor");
+         const projectCount = document.getElementsByClassName("project");
+         const projectCounter = document.getElementById("project-counter");
          //--- select all <video> on the page
          const vids = document.getElementsByTagName('video');
+
+         projectCounter.setAttribute('data-count', projectCount.length);
+
          // Loop over the selected elements and add event listeners
          for (let i = 0; i < vids.length; i++) {
             vids[i].addEventListener('mouseover', function (e) {
@@ -564,6 +572,18 @@
             vids[i].addEventListener('mouseout', function (e) {
                vids[i].pause()
             });
+         }
+
+         try{
+            const getCodeWars = await fetch(codeWarsAPI, {
+               method:'GET'
+            });
+
+            const data = await getCodeWars.json();
+
+            cwhonor.setAttribute('data-count', data.honor);
+         } catch (err){
+            console.log(err.msg);
          }
       }
 
