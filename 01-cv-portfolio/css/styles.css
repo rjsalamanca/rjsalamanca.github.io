@@ -253,7 +253,8 @@ header .downlad-btn:hover {
   position: relative;
   background-size: cover;
   z-index: 1;
-  background-image: url(https://images4.newscred.com/Zz1hMGJmZWM5MzI4ZjU4ZDJkYTgwZGE4OWNhN2E0ZWU4Yg==);
+  background-image: url(/images/atlanta.jpeg);
+
 }
 
 .intro-section:before {
